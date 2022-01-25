@@ -6,9 +6,6 @@ import userEvent from '@testing-library/user-event';
 import { Button } from '../button';
 import { ButtonProps, ButtonSize, ButtonView } from '../button-props';
 
-import { All } from '../button.stories';
-import { makeScreenshot } from '../../../../test-utils/screenshot';
-
 const title = 'button';
 const onButtonClick = jest.fn();
 const onFocus = jest.fn();
@@ -34,10 +31,6 @@ function emulateClick(): void {
 }
 
 describe('Button', () => {
-    it('screenshot', async () => {
-        await makeScreenshot(<All/>, { width: 400, height: 400 });
-    });
-
     describe('logic', () => {
 
         beforeEach(() => {

@@ -1,9 +1,6 @@
 import React, { FC, ForwardedRef, forwardRef } from 'react';
 import './button.css';
-import { bem } from '../../../bem/bem';
-import { ButtonProps, ButtonWidth, TextButtonProps } from './button-props';
-
-const cls = bem('button');
+import { ButtonProps, TextButtonProps } from './button-props';
 
 const TextButtonContent: FC<TextButtonProps> = (props: TextButtonProps) => {
     const { iconLeft, iconRight } = props;
@@ -12,13 +9,7 @@ const TextButtonContent: FC<TextButtonProps> = (props: TextButtonProps) => {
         <>
             {iconLeft}
             <span
-                className={cls({
-                    elem: 'text',
-                    mods: {
-                        'with-left-icon': !!iconLeft,
-                        'with-right-icon': !!iconRight
-                    }
-                })}
+                className="btn"
             >
                 {props.children}
             </span>
@@ -36,18 +27,13 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>((
         view,
     } = props;
 
+    // eslint-disable-next-line no-console
+    console.log({ size, view });
+
     return (
         <button
             ref={ref}
-            className={cls({
-                mods: {
-                    width: 'width' in props ? props.width : ButtonWidth.Auto,
-                    size,
-                    view,
-                    mode: 'icon' in props ? 'icon' : 'text'
-                },
-                mix: props.className
-            })}
+            className="btn2"
             disabled={props.isDisabled}
             type={props.htmlType}
             onClick={props.onClick}

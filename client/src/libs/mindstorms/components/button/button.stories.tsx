@@ -1,5 +1,4 @@
 import React from 'react';
-import { PlusIcon } from '../icon/PlusIcon';
 import { Button } from './button';
 import {
     BaseButtonProps,
@@ -26,7 +25,7 @@ const defaultProps: BaseButtonProps = {
 const defaultTextProps: TextButtonProps = {
     ...defaultProps,
     children: 'Button',
-    iconLeft: <PlusIcon fill="currentColor" size={16} />,
+    iconLeft: <span />
 } as const;
 
 const dd = 12;
