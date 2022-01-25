@@ -15,6 +15,19 @@ module.exports = {
             "jsx": true
         }
     },
+    "overrides": [
+        {
+            "files": ["./client/**/*.ts", "./client/**/*.tsx"],
+            parserOptions: {
+                "project": "./client/tsconfig.json",
+                // "project": "./tsconfig.json", // uncomment to error
+                "sourceType": "module",
+                "ecmaFeatures": {
+                    "jsx": true
+                }
+            },
+        },
+    ],
     rules: {
         "@typescript-eslint/no-unsafe-call": "error",
         "@typescript-eslint/no-unsafe-assignment": "error"
