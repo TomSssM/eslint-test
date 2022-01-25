@@ -5,3 +5,4 @@ const elem = <Button />;
 const dd1 = dd;
 
 console.log(elem);
+console.log(dd1);

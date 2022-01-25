@@ -9,8 +9,8 @@ module.exports = {
         "node": false
     },
     parserOptions: {
-        // "project": "./client/tsconfig.json",
-        "project": "./tsconfig.json",
+        "project": "./client/tsconfig.json",
+        // "project": "./tsconfig.json", // uncomment to error
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
