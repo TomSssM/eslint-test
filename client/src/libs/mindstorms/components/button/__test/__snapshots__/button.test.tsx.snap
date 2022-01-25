@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button screenshot 1`] = `
+".button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .1s ease-out, color .15s linear;
+    color: var(--clr-el-gray-080);
+}
+
+    .button:active {
+        transition: none;
+        transform: scale(.96);
+    }
+
+    .button:disabled,
+    .button:disabled:hover {
+        transform: scale(1);
+        background-color: var(--clr-el-gray-020);
+        color: var(--crl-el-gray-050);
+        cursor: default;
+    }
+
+    .button_size_s32 {
+            border-radius: 10px;
+        }
+
+    .button_size_s32.button_mode_text {
+                padding: 5px 8px;
+            }
+
+    .button_size_s32.button_mode_icon {
+                padding: 8px;
+            }
+
+    .button_size_s32 .button__text {
+                font-size: 14px;
+                line-height: 20px;
+                padding-bottom: 2px;
+            }
+
+    .button_size_s44 {
+            border-radius: 14px;
+        }
+
+    .button_size_s44.button_mode_text {
+                padding: 10px 14px;
+            }
+
+    .button_size_s44.button_mode_icon {
+                padding: 10px;
+            }
+
+    .button_size_s44 .button__text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+    .button_size_s56 {
+            border-radius: 14px;
+        }
+
+    .button_size_s56.button_mode_text {
+                padding: 13px 14px;
+            }
+
+    .button_size_s56.button_mode_icon {
+                padding: 16px;
+            }
+
+    .button_size_s56 .button__text {
+                font-size: 20px;
+                line-height: 28px;
+                padding-bottom: 2px;
+            }
+
+    .button_view_contrast {
+            background-color: var(--clr-bg-gray-1);
+        }
+
+    .button_view_contrast:hover {
+                background-color: var(--clr-bg-gray-2);
+            }
+
+    .button_view_contrast:active {
+                background-color: var(--clr-bg-gray-2);
+            }
+
+    .button_view_shade {
+            background-color: var(--clr-el-gray-020);
+        }
+
+    .button_view_shade:hover {
+                background-color: var(--clr-el-gray-030);
+            }
+
+    .button_view_shade:active {
+                background-color: var(--clr-el-gray-030);
+            }
+
+    .button_width_max {
+            width: 100%
+        }
+
+    .button_width_auto {
+            width: auto;
+            max-width: max-content;
+        }
+
+    .button__text {
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        user-select: none;
+    }
+
+    .button__text_with-left-icon {
+            margin-left: 8px;
+        }
+
+    .button__text_with-right-icon {
+            margin-right: 8px;
+        }
+:root {
+    --clr-el-gray-020: #B0BDD633;
+    --clr-el-gray-030: #A5B1CA4D;
+
+    --clr-bg-gray-1: #FFFFFF;
+    --clr-bg-gray-2: #F6F8FB;
+
+    --clr-el-gray-080: #2F3747;
+    --crl-el-gray-050: #475A8080;
+}
+
+<div style=\\"margin-bottom:8px\\"><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">size: s32</span></button></div><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s44 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">size: s44</span></button></div><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s56 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">size: s56</span></button></div></div><div style=\\"margin-bottom:8px\\"><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">view: shade</span></button></div><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_contrast button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">view: contrast</span></button></div></div><div style=\\"margin-bottom:8px\\"><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">isDisabled</span></button></div><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\" disabled=\\"\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">isDisabled</span></button></div></div><div style=\\"margin-bottom:8px\\"><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon\\">iconLeft</span></button></div></div><div style=\\"margin-bottom:8px\\"><div style=\\"margin-right:8px;display:inline-block\\"><button class=\\"button button_width_auto button_size_s32 button_view_shade button_mode_text\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg><span class=\\"button__text button__text_with-left-icon button__text_with-right-icon\\">iconRight</span><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 24 24\\" fill=\\"currentColor\\"><path color=\\"currentColor\\" fill-rule=\\"evenodd\\" clip-rule=\\"evenodd\\" d=\\"M12 3C11.4477 3 11 3.44772 11 4V11H4C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13H11V20C11 20.5523 11.4477 21 12 21C12.5523 21 13 20.5523 13 20V13H20C20.5523 13 21 12.5523 21 12C21 11.4477 20.5523 11 20 11H13V4C13 3.44772 12.5523 3 12 3Z\\"></path></svg></button></div></div>"
+`;

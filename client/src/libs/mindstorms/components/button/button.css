@@ -1,0 +1,129 @@
+.button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .1s ease-out, color .15s linear;
+    color: var(--clr-el-gray-080);
+
+    &:active {
+        transition: none;
+        transform: scale(.96);
+    }
+
+    &:disabled,
+    &:disabled:hover {
+        transform: scale(1);
+        background-color: var(--clr-el-gray-020);
+        color: var(--crl-el-gray-050);
+        cursor: default;
+    }
+
+    &_size {
+        &_s32 {
+            border-radius: 10px;
+
+            &.button_mode_text {
+                padding: 5px 8px;
+            }
+
+            &.button_mode_icon {
+                padding: 8px;
+            }
+
+            .button__text {
+                font-size: 14px;
+                line-height: 20px;
+                padding-bottom: 2px;
+            }
+        }
+
+        &_s44 {
+            border-radius: 14px;
+
+            &.button_mode_text {
+                padding: 10px 14px;
+            }
+
+            &.button_mode_icon {
+                padding: 10px;
+            }
+
+            .button__text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &_s56 {
+            border-radius: 14px;
+
+            &.button_mode_text {
+                padding: 13px 14px;
+            }
+
+            &.button_mode_icon {
+                padding: 16px;
+            }
+
+            .button__text {
+                font-size: 20px;
+                line-height: 28px;
+                padding-bottom: 2px;
+            }
+        }
+    }
+
+    &_view {
+        &_contrast {
+            background-color: var(--clr-bg-gray-1);
+
+            &:hover {
+                background-color: var(--clr-bg-gray-2);
+            }
+
+            &:active {
+                background-color: var(--clr-bg-gray-2);
+            }
+        }
+
+        &_shade {
+            background-color: var(--clr-el-gray-020);
+
+            &:hover {
+                background-color: var(--clr-el-gray-030);
+            }
+
+            &:active {
+                background-color: var(--clr-el-gray-030);
+            }
+        }
+    }
+
+    &_width {
+        &_max {
+            width: 100%
+        }
+
+        &_auto {
+            width: auto;
+            max-width: max-content;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        user-select: none;
+
+        &_with-left-icon {
+            margin-left: 8px;
+        }
+
+        &_with-right-icon {
+            margin-right: 8px;
+        }
+    }
+}

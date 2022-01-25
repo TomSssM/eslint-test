@@ -1,0 +1,15 @@
+.Counter {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.logoContainer {
+    background-color: white;
+}
+
+.anotherContainer {
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+    background-image: url(./metrica.svg);
+}

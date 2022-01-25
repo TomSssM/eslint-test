@@ -1,0 +1,15 @@
+.svg-direction-icon_direction_left {
+    transform: rotate(90deg);
+}
+
+.svg-direction-icon_direction_right {
+    transform: rotate(-90deg);
+}
+
+.svg-direction-icon_direction_up {
+    transform: rotate(180deg);
+}
+
+.svg-direction-icon_direction_down {
+    transform: rotate(0deg);
+}
